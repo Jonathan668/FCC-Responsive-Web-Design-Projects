@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Preference Survey Form</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title"><b>Coffee Preference Survey Form</b></h1>
+        <p id="description"><i>Thank you for taking the time to share info about your coffee preference</i></p>
+    </header>
+    <section id="main"> 
+        <div class="container">
+            <form id="survey-form" action="">
+                <div class="inputs">
+                    <label id="name-label" for="name">Name</label>
+                    <br>
+                    <input id="name" class="input" type="text" name="name" placeholder="Enter your name" required>
+                    <br>
+                    <br>
+                </div>
+                <div class="inputs">
+                   <label id="email-label" for="email">Email</label>
+                   <br>
+                   <input id="email" class="input" type="email" name="email" placeholder="Enter your Email" required>
+                   <br>
+                   <br>
+                </div>
+                <div class="inputs">
+                   <label id="number-label" for="age">Age(optional)</label>
+                   <br>
+                   <input id="number" class="input" type="number" name="age" placeholder="Age" min="1" max="100">
+                   <br>
+                   <br>
+                </div>
+                <div class="inputs">
+                    <label for="gender">Gender</label>
+                    <br>
+                    <label class="radio" for="male"><input id="male" type="radio" name="option" value="male">Male</label>
+                    <label class="radio" for="female"><input id="female"  type="radio" name="option" value="female">Female</label>
+                    <label class="radio" for="not-to-say"><input id="not-to-say"  type="radio" name="option" value="not-to-say">I prefer not to say</label>
+                    <br>
+                </div>
+                <div class="inputs">
+                    <label for="dropdown">Which roast do you prefer?</label>
+                    <br>
+                    <select id="dropdown" class="input" name="dropdown" aria-placeholder="Select roast">
+                        <option name="option" value="" disabled selected>Select roast</option>
+                        <option name="option" value="light">Light</option>
+                        <option name="option" value="medium">Medium</option>
+                        <option name="option" value="dark">Dark</option>
+                        <option name="option" value="extra-dark">Extra Dark</option>
+                    </select>
+                    <br>
+                    <br>
+                </div>
+                <div class="inputs">
+                    <label for="checkbox">What do you add to your coffee? (Check all that apply)</label>
+                    <br>
+                    <label class="checkbox" for="cream"><input id="cream" type="checkbox" name="option-1" value="cream">Cream</label>
+                    <label class="checkbox" for="sugar"><input id="sugar"  type="checkbox" name="option-2" value="sugar">Sugar</label>
+                    <label class="checkbox" for="stevia"><input id="stevia"  type="checkbox" name="option-3" value="stevia">Stevia</label>
+                    <label class="checkbox" for="sweet-n-low"><input id="sweet-n-low"  type="checkbox" name="option-4" value="sweet-n-low">Sweet N' Low</label>
+                    <label class="checkbox" for="splenda"><input id="splenda"  type="checkbox" name="option-5" value="splenda">Splenda</label>
+                    <label class="checkbox" for="whole-milk"><input id="whole-milk"  type="checkbox" name="option-6" value="whole-milk">Whole Milk</label>
+                    <label class="checkbox" for="skim-milk"><input id="skim-milk"  type="checkbox" name="option-7" value="skim-milk">Skim Milk</label>
+                    <label class="checkbox" for="almond-milk"><input id="almond-milk"  type="checkbox" name="option-8" value="almond-milk">Almond Milk</label>
+                    <label class="checkbox" for="oat-milk"><input id="oat-milk"  type="checkbox" name="option-9" value="oat-milk">Oat Milk</label>
+                    <br>
+                </div>
+                <div class="inputs">
+                    <label for="text-area">Any comments or suggestions?</label>
+                    <br>
+                    <textarea class="text-area"  name="comment" id="" cols="80" rows="10" placeholder="Enter your comment here..."></textarea>
+                    <br>
+                    <br>
+                    <button id="submit" class="btn" type="submit" >Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

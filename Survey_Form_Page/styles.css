@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Sen', sans-serif;
+    background-image: url(https://wallpaperaccess.com/full/2389954.jpg);
+    background-repeat:repeat-y
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+.header{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container{
+    background-color:white;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 100%;
+}
+#title{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+#description{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.labels{
+    padding-bottom: 10px;
+}
+
+.inputs{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 20px;
+    width: 100%;
+}
+.input{
+    border-radius: 5px;
+    width: 600px;
+    height: 30px;
+    width: 100%;
+}
+.radio{
+    margin-top: 10px;
+    display: block;
+}
+.checkbox{
+    margin-top: 10px;
+    display: block;
+}
+.text-area{
+    width: 100%;
+    resize: none;
+}
+.btn{
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Sen', sans-serif; 
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.btn:hover{
+    transform: scale(0.97);
+}
+@media (max-width: 800px){
+    .header{
+        padding: 5px 0 5px 0;
+        width: 100%;
+    }
+    #title{
+        font-size:25px;        
+    }
+}

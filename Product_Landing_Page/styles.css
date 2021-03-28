@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;   
+}
+.header{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(https://images.pexels.com/photos/4112237/pexels-photo-4112237.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-repeat: none;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 500ms ease;
+    
+}
+nav ul li a:hover{
+    color:red;
+}
+
+.logo{
+    margin-right: auto;
+}
+#header-img{
+    transform: scale(1.25);
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header h1{
+    font-size: 4em;
+    color: white;
+    text-transform: uppercase;  
+}
+.header p{
+    color: white;
+    font-size: 15px;
+    margin: 10px 0 40px;
+}
+#email{
+    font-family: 'Montserrat', sans-serif;
+    width: 350px;
+    padding: 5px;
+    font-size: 15px;
+}
+.submit-button{
+    font-family: 'Montserrat', sans-serif;
+    width: 150px;
+    margin-top: 10px;
+    padding: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: red;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 500ms ease;
+    margin-left: 30%;
+}
+.submit-button:hover{
+    transform: scale(0.97);
+}
+.buttons{
+    font-family: 'Montserrat', sans-serif;
+    width: 150px;
+    margin-top: 10px;
+    padding: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: red;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 500ms ease;
+    margin-left: 30%;
+}
+.buttons:hover{
+    transform: scale(0.97);
+}
+.features{
+    height: 60vh;
+    background-color: #e6a6af;
+}
+.features h2{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.container{
+    background-color:transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+}
+.text-box{
+    margin-top: 40px;
+    width: 500px;
+    margin-left: 100px;    
+}
+.text-box p{
+    color: white;
+}
+.boxes{
+    height: 90vh;
+    background-color: white;
+}
+.boxes h2{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.boxes h3{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.row-1{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.img-container{
+    width:400px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.img-row{
+    width: 400px; 
+    padding: 30px;
+    max-width: 100%;
+    text-align: center;
+    transition: all 500ms ease;
+}
+.img-row:hover{
+    transform: scale(0.97);
+}
+.pricing{
+    height: 80vh;
+    background-color:#DC143C;
+}
+.pricing h2{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: white;
+}
+.text-box2{
+    color: white;
+    margin-top: 10px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+.pricing h3{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+}
+.text-container{
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.text-container h3{
+    font-size: 4em;
+}
+.contact{
+    height: 25vh;
+    background-color:rgb(146, 146, 146);
+}
+.contact p{
+    color: white;
+    display: flex;
+    justify-content:center
+}
+.contact-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-top: 2%;
+    margin-right: auto;
+    padding-left: 15%;
+}
+.contact-container ul li{
+    display: flex;
+    text-decoration: none;
+    padding: 5px;
+}
+
+@media all and (max-width : 900px) {
+
+    .logo{
+        margin-left:10%;
+    }
+    .boxes{
+        height: 50vh;
+        background-color: white;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #header-img{
+        width: 100%;
+        transform: scale(0.75);
+    }
+    .header{
+        height: 100vh;
+
+    }
+    .header h1{
+        width: 100%;
+        font-size: 1.5em;
+        color: white;
+        text-transform: uppercase;  
+        text-align: center;
+    }
+    .header p{
+        color: white;
+        font-size: 10px;
+        margin: 10px 0 40px;
+    }
+    .nav{
+        justify-content: center;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        transition: all 500ms ease;
+        
+    }
+    .features{
+        height: 130vh;
+    }
+    .features h2{
+        font-size: 2em;
+    }
+    .text-box{
+        margin-top: 40px;
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    #video{
+        margin: 0 auto;
+        width: 90vw;
+    }
+    .boxes{
+        height: 310vh;
+    }
+    .boxes h2{
+        font-size: 2em;
+    }
+    .row-1{
+        flex-direction: column;
+    }
+    .pricing{
+        height: 200vh;
+    }
+    .pricing h2{
+        font-size: 2em;
+    }
+    .submit-button{
+        margin-top: 20px;
+    }
+    .buttons{
+        margin: 0 auto;
+    }
+    .img-container{
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .text-container{
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .text-box2{
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+    .text-box2 p{
+        width: 65vw;
+        margin-left: auto;
+        margin-right: auto;   
+        text-align: center;
+    }
+    .contact{
+        height: 35vh;
+    }
+    .contact-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact p{
+        margin-top: 30px;
+    }
+}

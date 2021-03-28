@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:white;
+}  
+.container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    overflow: scroll;   
+}
+#header{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+}
+.container header{
+    font-size: 2rem;
+    width: 100%;
+}
+.container .navbar{
+    top: 0;
+    position: fixed;
+    width: 16%;
+    height: 100%;
+    background-color: white;
+    border-right-style: solid;
+    border-right-width: 2px;
+}
+.navbar-links ul{
+    list-style-type: none;
+    font-size: 1rem;
+    margin-left: 7%;
+} 
+
+.navbar-links ul li:hover{
+    color: blue;
+    font-size: 1.15rem;
+    transition: all 0.3s ease ;
+}
+.nav-link{
+    padding: 2px;
+}
+#main-doc{
+    margin-top: 2%;
+    margin-left: 18%;
+}
+.section-container{
+    padding: 25px;
+}
+.main-section {
+    padding-top: 15px;
+    line-height: 1.5;
+  }
+.main-section ul li{
+    padding-bottom: 15px;
+    margin-left: 50px;
+}
+.code-container { 
+    padding-left: 10px; 
+    width: 100%;
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    line-height: 2;
+    background-color: #E0E0E0;
+    padding: 15px;
+    margin: 15px;
+    color: black;
+    width: 100%;
+}
+.toggle-button{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+@media all and (max-width: 1200px) {
+    .container .navbar{
+        height: 10%;
+        width: 100%;
+        background-color: white;
+        border-right: none;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+    }
+    #header{
+        width: 100%;
+    }
+    #main-doc{
+        width: 100%;
+        margin-top: 10%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .main-section{
+        width: 100%;
+        padding: 25px;
+    }
+    .navbar-links{
+        display: none;
+        width: 30%;
+        float: right;
+        background-color: white;
+    }
+    .navbar-links ul{
+        width: 100%;
+        margin-left: 0;
+    }
+    .navbar-links ul a{
+        width: 100%;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+    .navbar-links ul li:hover{
+        font-size: 1rem;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+      
+}
+@media all and (max-width: 800px){
+    #main-doc{
+        margin-top: 12%; 
+    }
+    .navbar-links ul a{
+        font-size: 0.75rem;
+    } 
+    .navbar-links ul li:hover{
+        font-size: 1rem;
+    }
+}
+@media all and (max-width: 600px){
+    #main-doc{
+        margin-top: 15%;
+    }
+    .navbar-links ul a{
+        font-size: 0.7rem;
+    }
+    .navbar-links ul li:hover{
+        font-size: 0.75rem;
+    }
+}
+@media all and (max-width: 400px){
+    #main-doc{
+        margin-top: 20%; 
+    }
+    .navbar-links ul a{
+        font-size: 0.65rem;
+    } 
+    .navbar-links ul li:hover{
+        font-size: 0.7rem;
+    }
+    #header{
+        font-size: 1.5rem;
+    }
+    .code-container { 
+        padding: 0;
+        width: 100%;
+    }
+    code {
+        display: block;
+        text-align: left;
+        line-height: 2;
+        background-color: #E0E0E0;
+        padding: 0;
+        margin: 0;
+        color: black;
+        width: 100%;
+    }
+}
